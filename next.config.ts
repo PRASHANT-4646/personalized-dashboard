@@ -1,6 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
@@ -11,13 +11,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  experimental: {
-  
-  },
+
   turbopack: {
   
-    root: "/home/evanik/Desktop/Personalized-Dashboard-main", 
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
